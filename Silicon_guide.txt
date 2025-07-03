@@ -1,0 +1,70 @@
+COPY, A =B                                                                    -------------- ---> Copy the value of A into B.
+GET[MA] = A                                                                  -------------- ---> Load value from memory address [MA] into A (auto-detect memory).
+INF [101]                                                                        --------------- ---> Show complete hardware info like CPU, GPU, etc.
+STOR[MA] = [A]                                                             --------------- ---> Store the value of A at memory address.
+GET[addr] = A                                                                ---------------- ---> Load value from the given memory address into A.
+STOR[addr] =[A]                                                            ------------------ ---> A ki value ko memory address (jo bhi Tumne adress Diya Hai square brackets ke andar addr ko replace karke) per store karo.
+ADD , A+B                                                                      ------------------ ---> Add B to A and update A.
+SUBT, A-B                                                                       ------------------ ---> Subtract B from A and update A.
+MULT, A*B                                                                      ------------------ ---> Multiply A with B and update A.
+DIVI, A/B                                                                         ------------------ ---> Divide A by B and update A.
+INCR A                                                                            ------------------ ---> Increment A by 1.
+DECR A                                                                          ------------------ ---> Decrement A by 1.
+BIT[AND]  A,B                                                                  ------------------ ---> Bitwise AND: A = A & B.
+BIT[XOR]  A,B                                                                 ------------------ ---> Bitwise XOR: A = A ^ B.
+BIT[OR]  A,B                                                                    ------------------ ---> Bitwise OR: A = A | B.
+BIT[NO] A                                                                       ------------------ ---> Bitwise NOT: invert bits of A.
+BLS A[n]                                                                          ------------------ ---> Left shift A by n bits.
+BRS A[n]                                                                          ------------------ ---> Right shift A by n bits.
+BUV A[n]                                                                          ------------------ ---> Vertically shift A up by n bits.
+BDV A[n]                                                                          ------------------ ---> Vertically shift A down by n bits.
+COMPARE[A,B]                                                               ------------------ ---> Compare A and B, and set flag.
+JUM[LAB]                                                                        ------------------ ---> Direct jump to label.
+JUM[LAB]IF                                                                     ------------------ ---> Jump if A equals B (ZF = 1).
+JUM[LAB]E                                                                      ------------------ ---> Jump if A not equal to B (ZF = 0).
+JUM[LAB]G                                                                      ------------------ ---> Jump if A > B.
+JUM[LAB]L                                                                      ------------------ ---> Jump if A < B.
+CAL[LAB]                                                                         ------------------ ---> Call a subroutine or function.
+CAL[BACK]                                                                      ------------------ ---> Return from function.
+ENT A                                                                              ------------------ ---> Push A onto stack.
+BAC A                                                                             ------------------ ---> Pop value from stack to A.
+KILL                                                                                 ------------------ ---> Stop program execution.
+NO[OPR]                                                                         ------------------ ---> No operation (CPU waits).
+SINTE n                                                                           ------------------ ---> System interrupt call (e.g., screen, keyboard).
+INP[port] A                                                                     ------------------ ---> Input from port into A.
+OUT[port] A                                                                    ------------------ ---> Send value of A to output port.
+ORIG[addr]                                                                      ------------------ ---> Set program starting memory address.
+D,Def[B,val]                                                                     ------------------ ---> Define data (byte size).
+D,Def[W,val]                                                                     ------------------ ---> Define data (word size).
+[LAB] :                                                                               ------------------ ---> Jump target or function label.
+CMT;[IGN] :                                                                      ------------------ ---> Comment (ignored by CPU).
+CLEAR A                                                                          ------------------ ---> Clear register A (set A = 0).
+[SWAP] A,B                                                                      ------------------ ---> Swap values of A and B.
+[TEST] A,B                                                                      ------------------ ---> Test A & B (result discarded, flag is set).
+LOAD[EA] A,[B]                                                              ------------------ ---> Load effective address.
+EXC A,B                                                                          ------------------ ---> Exchange values of A and B.
+[WAIT]event                                                                   ------------------ ---> CPU idle, waiting for event.
+VECT[SET]n , addr                                                         ------------------ ---> Set interrupt vector at address.
+CLEAN[I]                                                                         ------------------ ---> Clear interrupt flag (disable interrupt).
+SET[I]                                                                               ------------------ ---> Set interrupt flag (enable interrupt).
+HALT[CPU]                                                                     ------------------ ---> Halt CPU (used after boot or shutdown).
+JUMP[F] seg=[off]                                                          ------------------ ---> Perform jump (used in real-mode bootloader).
+Encrypt[Code] psswd : [   ]                                            ------------------ ---> Encrypt full code using provided password.
+SetURL [https://............]                                                 ------------------ ---> Connect to URL (mainly used in IoT).
+C[LOOP] : n                                                                     ------------------ ---> Repeat loop n times.
+str.map()                                                                         ------------------ ---> Help for full structure mapping.
+ENCODE[.........]                                                              ------------------ ---> Choose encoding (UTF-8 or UTF-16).
+[HelpMe]                                                                         ------------------ ---> Help command: lists all functions.
+HelpCode[.........]                                                            ------------------ ---> Auto-correct errors for new users.
+MOD A,B                                                                         ------------------ ---> A = A mod B.
+LOGIC[NOT] A                                                                ------------------ ---> Logical NOT on A.
+LOGIC[AND] A                                                                ------------------ ---> Logical AND: A = A && B.
+BREAK                                                                             ------------------ ---> Exit loop.
+PRI["      "]                                                                        ------------------ ---> Print string or characters.
+WRI["      "]                                                                       ------------------ ---> Take input from user.
+PRI[A]                                                                              ------------------ ---> Print value of A.
+LOG[ALL]	                                                                      ------------------ ---> Print all registers and memory (debug).
+TRAC[on/off]	                                                           ------------------ ---> Enable/Disable execution trace.
+ERR[code] 	                                                                ------------------ ---> Force an error (for test).
+ASSERT[A==B]	                                                         ------------------ ---> Throw error if condition fails.
+
