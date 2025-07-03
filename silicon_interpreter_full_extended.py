@@ -2,7 +2,7 @@
 # SiliconLang Interpreter - Full Version
 
 # Language Extension: .sil
-# Author: Mr. Knowledge
+# Author: Abhay Pratap Singh Sengar 
 
 import sys
 import re
