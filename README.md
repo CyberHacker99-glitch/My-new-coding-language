@@ -5,7 +5,7 @@ A modern, secure, and powerful low level language created by Abhay Pratap Singh 
 
 ## 📚 Description
 
-[I am a student of class 11th. I am interested in computers and their working. so I am curious about that how the great peoples make their own coding languages. so I learned python and started to make my own coding language. I saw that the low level languages are different for different hardware and processors, so I think what if a low level language is same for and device or processor and i made this after several year spending on reasearches i made this.But please check my whole python code before starting with my language. Thank you.😀😊]
+[I am a student of class 11th. I am interested in computers and their working. so I am curious about that how the great peoples make their own coding languages. so I learned python and started to make my own coding language. I saw that the low level languages are different for different hardware and processors, so I think what if a low level language is same for any device or processor and i made this after several year spending on reasearches i made this.But please check my whole python code before starting with my language. Thank you.😀😊]
 
 ## 🛠️ Features
 
