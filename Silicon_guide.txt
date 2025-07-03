@@ -1,9 +1,9 @@
 COPY, A =B                                                                    -------------- ---> Copy the value of A into B.
 GET[MA] = A                                                                  -------------- ---> Load value from memory address [MA] into A (auto-detect memory).
 INF [101]                                                                        --------------- ---> Show complete hardware info like CPU, GPU, etc.
-STOR[MA] = [A]                                                             --------------- ---> Store the value of A at memory address.
+STOR[MA] = [A]                                                             --------------- ---> Store the value of A at memory address(auto-detect memory).
 GET[addr] = A                                                                ---------------- ---> Load value from the given memory address into A.
-STOR[addr] =[A]                                                            ------------------ ---> A ki value ko memory address (jo bhi Tumne adress Diya Hai square brackets ke andar addr ko replace karke) per store karo.
+STOR[addr] =[A]                                                            ------------------ --->  store the value of A at memory address given by you in place of addr.
 ADD , A+B                                                                      ------------------ ---> Add B to A and update A.
 SUBT, A-B                                                                       ------------------ ---> Subtract B from A and update A.
 MULT, A*B                                                                      ------------------ ---> Multiply A with B and update A.
