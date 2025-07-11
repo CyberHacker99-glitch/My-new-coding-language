@@ -283,7 +283,7 @@ command_map = {
     'SET[I]': cmd_SETI, 'HALT[CPU]': cmd_HALTCPU, 'Encrypt[Code]': cmd_ENCRYPT, 'SetURL': cmd_SETURL,
     'C[LOOP]': cmd_CLOOP, 'str.map()': cmd_STRMAP, 'ENCODE': cmd_ENCODE, 'LOGIC[NOT]': cmd_LOGICNOT,
     'LOGIC[AND]': cmd_LOGICAND, 'BREAK': cmd_BREAK, 'PRI': cmd_PRI, 'WRI': cmd_WRI, 'PRI[A]': cmd_PRI,
-    'LOG[ALL]': cmd_LOGALL, 'TRAC': cmd_TRAC, 'ERR': cmd_ERR, 'ASSERT': cmd_ASSERT
+    'LOG[ALL]': cmd_LOGALL, 'TRAC': cmd_TRAC, 'ERR': cmd_ERR, 'ASSERT': cmd_ASSERT,
 
     'CAL[LAB]': cmd_CAL,
     'CAL[BACK]': cmd_CALBACK,
